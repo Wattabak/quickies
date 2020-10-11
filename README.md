@@ -17,4 +17,17 @@ A place to store all byte-sized projects designed to learn new things and regula
 
 Elixir or C#
 
-2.
+2.Learning Elixir simple projects
+FizzBuzz and shit
+
+3.Uptime robot for telegram
+
+4.Cryptopals challenges
+
+5. SHA encoder
+
+6. JSON parser
+
+
+
+
