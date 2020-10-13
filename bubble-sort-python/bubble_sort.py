@@ -2,9 +2,14 @@
 
 Not very optimized currently
 
+Complexity: O(n^2)
+
 Big help: 
     https://stackoverflow.com/questions/21272497/is-this-most-efficient-to-bubble-sort-a-list-in-python
     https://en.wikipedia.org/wiki/Bubble_sort
+
+Further optimizations with the same idea: 
+    Cocktail shaker sort, https://en.wikipedia.org/wiki/Cocktail_shaker_sort
 """
 import argparse
 import logging
@@ -26,23 +31,23 @@ def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
     Mathematically speaking, for any indexes i and j if i < j then a[i] <= a[j].
 
     n-th pass finds the n-th largest element and puts it into its final place
+
+    also elements after the last swap on every pass will be sorted, because there were no swaps after it, so we can omit checking these
     """
 
     swaps, compares = 0, 0
-    while True:
-        swapped = False
-        length = len(array)
-        for i in range(1, length):
+    n = len(array)
+    while n >= 1:
+        newn = 0
+        for i in range(1, n):
 
             if array[i-1] > array[i]:
                 array[i-1], array[i] = array[i], array[i-1]
                 swaps += 1
-                swapped = True
+                newn = i
 
             compares += 1
-        length -= 1
-        if not swapped:
-            break
+        n = newn
     return array, swaps, compares
 
 

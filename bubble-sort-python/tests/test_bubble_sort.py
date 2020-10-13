@@ -24,13 +24,6 @@ class TestBubbleSort(unittest.TestCase):
         must_return = [1, 1, 2, 3, 5, 20, 35, 40, 90]
         self.assertEqual(sorted_vals, must_return)
 
-    # def test_big_randoms(self) -> None:
-    #     alist = [random.randrange(100) for _ in range(100)]
-    #     vals, swaps, compares = bubble_sort_track(alist[:])
-    #     print(f"Swaps: {swaps}, compares: {compares}")
-    #     self.assertEqual(vals, sorted(alist[:]))
-    #     1/0
-
 
 if __name__ == "__main__":
     unittest.main()

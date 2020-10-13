@@ -16,7 +16,7 @@ A place to store all byte-sized projects designed to learn new things and regula
 
 
 2. [x] **Bubble sort** Classic simple algorithm for sorting iterables
-[python implementation](/bubble-sort-python/)
+[python implementation](/bubble-sort-python/), need to implement in elixir
 
 
 3. [ ] **Learning Elixir simple projects**
@@ -31,6 +31,9 @@ A place to store all byte-sized projects designed to learn new things and regula
 
 7. [ ] **JSON parser**
 
+8. [ ] **Cocktail shaker sort** Bubble sort version but optimized
 
+9. [ ] **Selection sort**
 
+10. [ ] **Quick sort**
 
