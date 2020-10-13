@@ -12,21 +12,24 @@ A place to store all byte-sized projects designed to learn new things and regula
 
 ## Projects
 
+1. [ ] **FTP client implementation** - Use Elixir or C#
 
-1. FTP client implementation
 
-Elixir or C#
+2. [x] **Bubble sort** Classic simple algorithm for sorting iterables
+[python implementation](/bubble-sort-python/)
 
-2.Learning Elixir simple projects
-FizzBuzz and shit
 
-3.Uptime robot for telegram
+3. [ ] **Learning Elixir simple projects**
 
-4.Cryptopals challenges
+    1. **Bubble sort**
 
-5. SHA encoder
+4. [ ] **Uptime robot for telegram**
 
-6. JSON parser
+5. [ ] **Cryptopals challenges**
+
+6. [ ] **SHA encoder**
+
+7. [ ] **JSON parser**
 
 
 
