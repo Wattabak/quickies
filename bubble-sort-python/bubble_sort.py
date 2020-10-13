@@ -24,12 +24,15 @@ def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
     Repeatedly swap the adjacent elements if they are in wrong order.
 
     Mathematically speaking, for any indexes i and j if i < j then a[i] <= a[j].
+
+    n-th pass finds the n-th largest element and puts it into its final place
     """
 
     swaps, compares = 0, 0
     while True:
         swapped = False
-        for i in range(1, len(array)):
+        length = len(array)
+        for i in range(1, length):
 
             if array[i-1] > array[i]:
                 array[i-1], array[i] = array[i], array[i-1]
@@ -37,7 +40,7 @@ def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
                 swapped = True
 
             compares += 1
-
+        length -= 1
         if not swapped:
             break
     return array, swaps, compares
