@@ -15,13 +15,9 @@ A place to store all byte-sized projects designed to learn new things and regula
 1. [ ] **FTP client implementation** - Use Elixir or C#
 
 
-2. [x] **Bubble sort** Classic simple algorithm for sorting iterables
+2. [x] **Bubble sort** Classic simple algorithm for sorting iterables.
 [python implementation](/bubble-sort-python/), need to implement in elixir
 
-
-3. [ ] **Learning Elixir simple projects**
-
-    1. **Bubble sort**
 
 4. [ ] **Uptime robot for telegram**
 
