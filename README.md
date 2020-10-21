@@ -1,41 +1,50 @@
+
 # Quickies
 
 A place to store all byte-sized projects designed to learn new things and regularly write software however useless it might be
-
 
 ## Ground rules
 
 1. List all project in this file
 
-
-
-
 ## Projects
 
-1. [ ] **FTP client implementation** - Use Elixir or C#
+1. [ ] **FTP client implementation:**
 
+    Use Elixir or C#
 
-2. [x] **Bubble sort** Classic simple algorithm for sorting iterables
-[python implementation](/bubble-sort-python/), need to implement in elixir
+2. [x] **Bubble sort:**
 
+    Classic simple algorithm for sorting iterables
 
-3. [ ] **Learning Elixir simple projects**
+    [python implementation](/bubble-sort-python/), elixir implementation pending
 
-    1. **Bubble sort**
+3. [x] **Selection sort**
 
-4. [ ] **Uptime robot for telegram**
+    The first item in the unsorted partition is compared with all the values to the right-hand side to check if it is the minimum value. If it is not the minimum value, then its position is swapped with the minimum value.
 
-5. [ ] **Cryptopals challenges**
+    [python implementation](/selection-sort-python/), elixir implementation pending
 
-6. [ ] **SHA encoder**
+4. [ ] **Quick sort**
 
-7. [ ] **JSON parser**
+5. [ ] **Cocktail shaker sort**
 
-8. [ ] **Cocktail shaker sort** Bubble sort version but optimized
+    Bubble sort version but optimized
 
-9. [ ] **Selection sort**
+6. [ ] **Learning Elixir simple projects**
 
-10. [ ] **Quick sort**
+7. [ ] **Uptime robot for telegram**
 
-11. [ ] **Diffie-Hellman key exchange protocol**  [inspiration](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c)
+8. [ ] **Cryptopals challenges**
 
+9. [ ] **SHA encoder**
+
+10. [ ] **JSON parser**
+
+11. [ ] **Diffie-Hellman key exchange protocol**
+
+    [inspiration](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c)
+
+## To-Do
+
+- performance tests for every project where it makes sense

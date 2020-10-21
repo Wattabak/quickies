@@ -1,8 +1,8 @@
 """
-
-Not very optimized currently
-
-Complexity: O(n^2)
+Time complexity
+    Worst case: [Big-O] O(n^2)
+    Average case: [Big-theta] ⊝(n^2)
+    Best case: [Big-Omega] Ω(n)
 
 Big help: 
     https://stackoverflow.com/questions/21272497/is-this-most-efficient-to-bubble-sort-a-list-in-python
@@ -13,17 +13,12 @@ Further optimizations with the same idea:
 """
 import argparse
 import logging
-from itertools import tee
 from typing import Any, Iterable, TypeVar
 
 logger = logging.getLogger(__name__)
 
 
-Swaps = TypeVar(int)
-Compares = TypeVar(int)
-
-
-def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
+def bubble_sort(array: Iterable) -> Iterable:
     """The simplest sorting algorithm
 
     Repeatedly swap the adjacent elements if they are in wrong order.
@@ -35,7 +30,6 @@ def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
     also elements after the last swap on every pass will be sorted, because there were no swaps after it, so we can omit checking these
     """
 
-    swaps, compares = 0, 0
     n = len(array)
     while n >= 1:
         newn = 0
@@ -43,12 +37,10 @@ def bubble_sort(array: Iterable) -> tuple[Iterable, Swaps, Compares]:
 
             if array[i-1] > array[i]:
                 array[i-1], array[i] = array[i], array[i-1]
-                swaps += 1
                 newn = i
 
-            compares += 1
         n = newn
-    return array, swaps, compares
+    return array
 
 
 if __name__ == "__main__":
@@ -59,8 +51,7 @@ if __name__ == "__main__":
                         nargs='+', help='values to sort')
     array = parser.parse_args().values
     length = len(array)
-    sorted_array, swpcount, cmpcount = bubble_sort(array)
+    sorted_array = bubble_sort(array)
     print(
-        f"out: {sorted_array};\ncompares: {cmpcount};"
-        f"\nswpcount: {swpcount};\narray_length: {length}"
+        f"out: {sorted_array}; array_length: {length};"
     )
