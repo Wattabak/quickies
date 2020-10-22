@@ -56,7 +56,7 @@ def selection_sort(array: Iterable) -> Iterable:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Sort elements using Bubble Sort algorithm"
+        description="Sort elements using Selection Sort algorithm"
     )
     parser.add_argument('values', metavar='V', type=int,
                         nargs='+', help='values to sort')

@@ -25,23 +25,29 @@ A place to store all byte-sized projects designed to learn new things and regula
 
     [python implementation](/selection-sort-python/), elixir implementation pending
 
-4. [ ] **Quick sort**
+4. [x] **Insertion sort**
 
-5. [ ] **Cocktail shaker sort**
+    Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+    [python implementation](/insertion-sort-python/), elixir implementation pending
+
+5. [ ] **Quick sort**
+
+6. [ ] **Cocktail shaker sort**
 
     Bubble sort version but optimized
 
-6. [ ] **Learning Elixir simple projects**
+7. [ ] **Learning Elixir simple projects**
 
-7. [ ] **Uptime robot for telegram**
+8. [ ] **Uptime robot for telegram**
 
-8. [ ] **Cryptopals challenges**
+9. [ ] **Cryptopals challenges**
 
-9. [ ] **SHA encoder**
+10. [ ] **SHA encoder**
 
-10. [ ] **JSON parser**
+11. [ ] **JSON parser**
 
-11. [ ] **Diffie-Hellman key exchange protocol**
+12. [ ] **Diffie-Hellman key exchange protocol**
 
     [inspiration](https://medium.com/@sadatnazrul/diffie-hellman-key-exchange-explained-python-8d67c378701c)
 
