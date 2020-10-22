@@ -13,7 +13,7 @@ Further optimizations with the same idea:
 """
 import argparse
 import logging
-from typing import Any, Iterable, TypeVar
+from typing import Any, Iterable
 
 logger = logging.getLogger(__name__)
 
